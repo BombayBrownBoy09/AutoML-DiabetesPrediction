@@ -9,7 +9,7 @@ lint:
 	pylint --disable=R,C,broad-except,bare-except *.py
 
 train-ludwig:
-	time ludwig train --config config.yaml --dataset data/spam.csv
+	time ludwig train --config config.yaml --dataset data/diabetes.csv
 
 test:
 	python -m pytest -vv testing_data.py
