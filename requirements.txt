@@ -2,7 +2,7 @@ ludwig==0.5.2
 pylint
 pytest
 black
-ray
+ray==1.13.0
 pandas
 horovod[pytorch]
 deepchecks
