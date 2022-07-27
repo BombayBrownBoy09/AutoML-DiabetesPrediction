@@ -1,3 +1,4 @@
+hyperopt
 ludwig==0.5.2
 pylint
 pytest
@@ -8,4 +9,3 @@ horovod[pytorch]
 deepchecks
 GPUtil
 dask
-hyperopt
