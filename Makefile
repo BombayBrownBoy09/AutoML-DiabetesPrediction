@@ -12,6 +12,6 @@ train-ludwig:
 	time ludwig train --config config.yaml --dataset data/spam.csv
 
 test:
-	python -m pytest -vv test_data.py
+	python -m pytest -vv testing_data.py
 
 all: install format lint test
