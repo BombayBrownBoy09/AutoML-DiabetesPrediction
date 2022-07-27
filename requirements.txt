@@ -8,3 +8,4 @@ horovod[pytorch]
 deepchecks
 GPUtil
 dask
+hyperopt
