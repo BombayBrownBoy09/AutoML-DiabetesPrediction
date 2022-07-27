@@ -24,4 +24,5 @@ jobs:
       run: |
         make test
     - name: Smaple Run
+      run: |
         python model_training.py
