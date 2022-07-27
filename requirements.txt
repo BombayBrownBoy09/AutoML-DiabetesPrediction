@@ -3,7 +3,7 @@ pylint==2.14.3
 pytest==7.1.2
 black==22.3.0
 ray==1.13.0
-scikit-learn==1.0.2
-matplotlib==3.5.2
-seaborn==0.11.2
+pandas
+flaml
+horovod[pytorch]
 deepchecks==0.8.0
