@@ -7,3 +7,4 @@ pandas
 horovod[pytorch]
 deepchecks
 GPUtil
+dask
