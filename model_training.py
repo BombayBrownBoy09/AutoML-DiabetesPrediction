@@ -13,13 +13,13 @@ from sklearn.model_selection import train_test_split
 shutil.rmtree("./results", ignore_errors=True)
 shutil.rmtree("./visualizations", ignore_errors=True)
 
-file_list = glob.glob("./data/*.json")
-file_list += glob.glob("./data/*.hdf5")
-for f in file_list:
-    try:
-        os.remove(f)
-    except FileNotFoundError:
-        pass
+# file_list = glob.glob("./data/*.json")
+# file_list += glob.glob("./data/*.hdf5")
+# for f in file_list:
+#     try:
+#         os.remove(f)
+#     except FileNotFoundError:
+#         pass
 
 # Read in base config
 with open("./config.yaml", encoding="utf-8") as f:
