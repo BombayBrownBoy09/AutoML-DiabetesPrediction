@@ -1,4 +1,3 @@
-import sklearn.metrics
 import pandas as pd
 from flaml import AutoML
 
