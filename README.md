@@ -30,3 +30,5 @@ Best hyperparmeter config: {'n_estimators': 4, 'num_leaves': 6, 'min_child_sampl
 Best accuracy on validation data: 0.7695
 Training duration of best run: 0.01133 s
 ```
+
+![Learning Curve](LR_AutoML.png)
