@@ -31,4 +31,6 @@ Best accuracy on validation data: 0.7695
 Training duration of best run: 0.01133 s
 ```
 
+### Performance
+
 ![Learning Curve](LR_AutoML.png)
