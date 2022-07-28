@@ -1,5 +1,5 @@
 hyperopt
-ludwig==0.5.2
+flaml
 pylint
 pytest
 black
