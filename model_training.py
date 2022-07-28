@@ -14,11 +14,12 @@ settings = {
     "time_budget": 50,  # total running time in seconds
     "metric": "accuracy", 
     "task": "classification",  # task type
+    "seed": 7654321
 }
 
 automl.fit(X_train=X_train, y_train=y_train, **settings)
 
-'''retrieve best config and best learner'''
+# '''retrieve best config and best learner'''
 print('Best hyperparmeter config:', automl.best_config)
 print('Best accuracy on validation data: {0:.4g}'.format(1-automl.best_loss))
 print('Training duration of best run: {0:.4g} s'.format(automl.best_config_train_time))
