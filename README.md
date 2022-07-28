@@ -34,3 +34,6 @@ Training duration of best run: 0.01133 s
 ### Performance
 
 ![Learning Curve](LR_AutoML.png)
+
+### Demo Notebook
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ekrO3q4COsKVzeWXCcsVtecqFmInbATX?usp=sharing]
