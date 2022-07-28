@@ -8,8 +8,8 @@ format:
 lint:
 	pylint --disable=R,C,broad-except,bare-except *.py
 
-train-ludwig:
-	time ludwig train --config config.yaml --dataset data/diabetes.csv
+train-flaml:
+	time flaml train --config config.yaml --dataset data/diabetes.csv
 
 test:
 	python -m pytest -vv testing_data.py
