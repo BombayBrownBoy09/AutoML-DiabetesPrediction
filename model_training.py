@@ -1,12 +1,24 @@
-import pprint
+import sklearn.metrics
 import pandas as pd
-from ludwig.automl import auto_train
+from flaml import AutoML
 
-# Reading the csv file and storing it in a dataframe.
-inputdf = pd.read_csv("data/diabetes.csv")
+input_df = pd.read_csv("data/neo.csv")
+X = input_df.drop(["Outcome"], axis=1)
+y = input_df["Outcome"]  # pylint: disable=E1136
 
-auto_train_results = auto_train(
-    dataset=inputdf, target="Outcome", time_limit_s=120, tune_for_memory=True
-)
+automl = AutoML()
 
-pprint.pprint(auto_train_results)
+X_train, y_train = X,y
+
+settings = {
+    "time_budget": 50,  # total running time in seconds
+    "metric": "accuracy", 
+    "task": "classification",  # task type
+}
+
+automl.fit(X_train=X_train, y_train=y_train, **settings)
+
+'''retrieve best config and best learner'''
+print('Best hyperparmeter config:', automl.best_config)
+print('Best accuracy on validation data: {0:.4g}'.format(1-automl.best_loss))
+print('Training duration of best run: {0:.4g} s'.format(automl.best_config_train_time))
