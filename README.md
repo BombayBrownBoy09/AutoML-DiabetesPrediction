@@ -1,6 +1,8 @@
 # AutoML-Diabetes Prediction
 Classifying Diabetes cases using  FLAML, to train, evaluate, and deploy a model
 
+[![Build test with Github Actions](https://github.com/BombayBrownBoy09/FLAML-AutoML-DiabetesPrediction/actions/workflows/main.yml/badge.svg)](https://github.com/BombayBrownBoy09/FLAML-AutoML-DiabetesPrediction/actions/workflows/main.yml)
+
 ## FLAML AutoML
 
 FLAML (Fast and Lightweight AutoML) is a lightweight and efficient library implemented in Python and it has a scikit-learn style API. It allows the users to not worry about selecting the right machine learning algorithms or hyperparameters for each algorithm.
